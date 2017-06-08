@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -14,10 +15,12 @@ h1 {
 body{
 	background-color: black;
 }
+
 form {
 	text-align: center;
 	padding:20px;
 }
+
 button {
 	font-family: 'Roboto', sans-serif;
 	padding:10px;
@@ -27,6 +30,7 @@ button {
 	cursor:pointer;
 	font-size: 16px;
 }
+
 button:hover {
 	background-color:#CAE9FF;
 }
@@ -35,18 +39,23 @@ label {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
-img {
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-}
+
 ul {
-	/*display: flex;*/
-	/*width:500px;*/
-	height:500px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	color:white;
-	border: 1px solid #1B4965;
+	color:black;
 	text-decoration: underline;
+	padding: 25%;
+	list-style-type: none;
+	font-family: 'Indie Flower', sans-serif;
+	font-size: 20px;
+}
+
+.post-it {
+	background-image: url("../images/todo.jpg");
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height:900px;
+
 }
