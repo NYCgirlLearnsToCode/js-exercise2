@@ -9,9 +9,13 @@ function addToDo(event){
 	if(userInput.value === ' '){
 		return false;//stops any other code from executing underneath
 	}
-	toDoList.innerHTML += '<li>' + userInput.value + '</li>';
+	toDoList.innerHTML = '<li>' + userInput.value + '</li>' + toDoList.innerHTML ;//the order counts puts new li on top
+
+	// userInput.appendChild(toDoList);
+	// document.getElementById('user-input').
 
 	userInput.value = ' ';
+
 }
 
 userSubmit.addEventListener('click', addToDo, false);
